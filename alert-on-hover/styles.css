@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* This adds some default styles to the page, such as the background color and font */
+:root {
+    background-color: rgb(26, 26, 26);
+
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20rem;
+}
+
+#subject {
+    width: 10rem;
+    height: 5rem;
+
+    background-color: rgb(30, 30, 30);
+
+    border-radius: 1rem;
+
+    /* This controls the fade effect when you hover */
+    transition: 0.2s;
+}
+
+#subject:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+#subject:hover #header {
+    color: rgb(255, 255, 255);
+}
+
+/* This centers the text because for some reason I couldn't get the "text-align" property to work, smh */
+h1 {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
